@@ -1,43 +1,50 @@
-
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Страхование &mdash; Сообщество RAISA</title>
+    <title>Страхование &#8212; Сообщество RAISA</title>
     
     <link rel="stylesheet" href="_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '0.1',
+        URL_ROOT:    './',
+        VERSION:     '1.1 Legacy release',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  false
+        HAS_SOURCE:  false,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="Сообщество RAISA" href="index.html" />
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
     <link rel="next" title="Просмотр кошелька RAISA SRP" href="srp_info.html" />
     <link rel="prev" title="Vargur - HQ" href="fit/shield/hq/vargur.html" />
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700'
-          rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700'
+      rel='stylesheet' type='text/css'>
  
-    <style type="text/css">
-      table.right { float: right; margin-left: 20px; }
-      table.right td { border: 1px solid #ccc; }
-    </style>
-    <script type="text/javascript">
-      // intelligent scrolling of the sidebar content
-      $(window).scroll(function() {
+<style type="text/css">
+    table.right {
+        float: right;
+        margin-left: 20px;
+    }
+
+    table.right td {
+        border: 1px solid #ccc;
+    }
+</style>
+<script type="text/javascript">
+    // intelligent scrolling of the sidebar content
+    $(window).scroll(function () {
         var sb = $('.sphinxsidebarwrapper');
         var win = $(window);
         var sbh = sb.height();
@@ -48,63 +55,63 @@
         var curbot = curtop + sbh;
         // does sidebar fit in window?
         if (sbh < win.innerHeight()) {
-          // yes: easy case -- always keep at the top
-          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
-                                $(document).height() - sbh - 200]));
+            // yes: easy case -- always keep at the top
+            sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                $(document).height() - sbh - 200]));
         } else {
-          // no: only scroll if top/bottom edge of sidebar is at
-          // top/bottom edge of window
-          if (curtop > wintop && curbot > winbot) {
-            sb.css('top', $u.max([wintop - offset - 10, 0]));
-          } else if (curtop < wintop && curbot < winbot) {
-            sb.css('top', $u.min([winbot - sbh - offset - 20,
-                                  $(document).height() - sbh - 200]));
-          }
+            // no: only scroll if top/bottom edge of sidebar is at
+            // top/bottom edge of window
+            if (curtop > wintop && curbot > winbot) {
+                sb.css('top', $u.max([wintop - offset - 10, 0]));
+            } else if (curtop < wintop && curbot < winbot) {
+                sb.css('top', $u.min([winbot - sbh - offset - 20,
+                    $(document).height() - sbh - 200]));
+            }
         }
-      });
-    </script>
+    });
+</script>
 
   </head>
-  <body>
+  <body role="document">
 <div class="pageheader">
-  <ul>
-    <li><a href="quickstart.html">Быстрый старт</a></li>
-    <li><a href="rules.html">Правила</a></li>
-    <li><a href="fits/index.html">Фиты</a></li>
-    <li><a href="#">Страхование</a></li>
-    <li><a href="about/index.html">Наша команда</a></li>
-  </ul>
-  <div>
-    <a href="/">
-      <h1>RAISA</h1>
-      <h2>Вторжения Sansha для чайников и не только!</h2>
-    </a>
-  </div>
+    <ul>
+        <li><a href="quickstart.html">Быстрый старт</a></li>
+        <li><a href="rules.html">Правила</a></li>
+        <li><a href="fits/index.html">Фиты</a></li>
+        <li><a href="#">Страхование</a></li>
+        <li><a href="about/index.html">Наша команда</a></li>
+    </ul>
+    <div>
+        <a href="/">
+            <h1>RAISA</h1>
+            <h2>Вторжения Sansha для чайников и не только!</h2>
+        </a>
+    </div>
 </div>
 
-    <div class="related">
-      <h3>Просмотр</h3>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Словарь-указатель"
-             accesskey="I">словарь</a></li>
+          <a href="genindex.html" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
         <li class="right" >
           <a href="srp_info.html" title="Просмотр кошелька RAISA SRP"
-             accesskey="N">следующий</a> |</li>
+             accesskey="N">вперёд</a> |</li>
         <li class="right" >
           <a href="fit/shield/hq/vargur.html" title="Vargur - HQ"
-             accesskey="P">предыдущий</a> |</li>
-        <li><a href="tree.html">RAISA</a> &raquo;</li> 
+             accesskey="P">назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="tree.html">RAISA</a> &#187;</li> 
       </ul>
     </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="tree.html">Содержание</a></h3>
+  <h3><a href="tree.html">Оглавление</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Страхование</a><ul>
 <li><a class="reference internal" href="#utc">Условия страхования (от 2014-03-15 11:00 UTC)</a></li>
-<li><a class="reference internal" href="#raisa">Тарифы (ФК из <tt class="docutils literal"><span class="pre">команды</span> <span class="pre">RAISA</span></tt>)</a></li>
-<li><a class="reference internal" href="#raisa-trusted">Тарифы (ФК из <tt class="docutils literal"><span class="pre">RAISA</span> <span class="pre">Trusted</span></tt>)</a></li>
+<li><a class="reference internal" href="#raisa">Тарифы (ФК из <code class="docutils literal"><span class="pre">команды</span> <span class="pre">RAISA</span></code>)</a></li>
+<li><a class="reference internal" href="#raisa-trusted">Тарифы (ФК из <code class="docutils literal"><span class="pre">RAISA</span> <span class="pre">Trusted</span></code>)</a></li>
 <li><a class="reference internal" href="#id2">Процедура возмещения</a></li>
 <li><a class="reference internal" href="#api">API</a></li>
 </ul>
@@ -118,15 +125,15 @@
   <p class="topless"><a href="srp_info.html"
                         title="следующая глава">Просмотр кошелька RAISA SRP</a></p>
 <div id="searchbox" style="display: none">
-  <h3>Быстрый поиск</h3>
+    <h3>Быстрый поиск</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Искать" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+        <input type="text" name="q"/>
+        <input type="submit" value="Искать"/>
+        <input type="hidden" name="check_keywords" value="yes"/>
+        <input type="hidden" name="area" value="default"/>
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Введите слова для поиска по названию корабля, плекса или руководства.
+        Введите слова для поиска по названию корабля, плекса или руководства.
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -136,7 +143,7 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="toctree-wrapper compound" id="index-0">
 </div>
@@ -149,7 +156,7 @@
 <p>Выплата по страховому случаю будет совершена, если сюблюдены следующие условия:</p>
 <ol class="arabic">
 <li><dl class="first docutils">
-<dt>Слив не по своей вине (<a class="reference internal" href="fits/index.html"><em>правильный фит</em></a>, броадкаст вовремя и т.п.)</dt>
+<dt>Слив не по своей вине (<a class="reference internal" href="fits/index.html"><span class="doc">правильный фит</span></a>, броадкаст вовремя и т.п.)</dt>
 <dd><p class="first last">1.1 Во время вылета логисты не смогли откачать Ваш корабль, что привело к его потере.</p>
 </dd>
 </dl>
@@ -174,18 +181,18 @@
 </li>
 <li><p class="first">Полёты не с ФК канала не страхуются.</p>
 <blockquote>
-<div><p>8.1 ФК канала указаны на странице <a class="reference internal" href="about/index.html"><em>О канале</em></a>.</p>
+<div><p>8.1 ФК канала указаны на странице <a class="reference internal" href="about/index.html"><span class="doc">О канале</span></a>.</p>
 <p>8.2 Пилота, имеющего право водить флот с ограниченной страховкой, можно определить по группе &#8220;Trusted&#8221; в ТС (синий &#8220;плюс&#8221;).</p>
 </div></blockquote>
 </li>
-<li><p class="first">Окончательное решение по выплате страховки принимает <a class="reference internal" href="about/index.html"><em>администратор фонда страхования</em></a>.</p>
+<li><p class="first">Окончательное решение по выплате страховки принимает <a class="reference internal" href="about/index.html"><span class="doc">администратор фонда страхования</span></a>.</p>
 </li>
 <li><p class="first">Выплаты производятся на сумму стоимости корабля и сгоревших модулей минус страховка SCC.</p>
 </li>
 </ol>
 </div>
 <div class="section" id="raisa">
-<h2>Тарифы (ФК из <a class="reference internal" href="about/index.html"><em>команды RAISA</em></a>)<a class="headerlink" href="#raisa" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Тарифы (ФК из <a class="reference internal" href="about/index.html"><span class="doc">команды RAISA</span></a>)<a class="headerlink" href="#raisa" title="Ссылка на этот заголовок">¶</a></h2>
 <ul class="simple">
 <li>5 000 000 - страховка до 1 000 000 000 до ДТ</li>
 <li>10 000 000 - страховка до 2 000 000 000 до ДТ</li>
@@ -195,7 +202,7 @@
 <p>Логисты бесплатно застрахованы до 300 000 000.</p>
 </div>
 <div class="section" id="raisa-trusted">
-<h2>Тарифы (ФК из <a class="reference internal" href="about/trusted.html"><em>RAISA Trusted</em></a>)<a class="headerlink" href="#raisa-trusted" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Тарифы (ФК из <a class="reference internal" href="about/trusted.html"><span class="doc">RAISA Trusted</span></a>)<a class="headerlink" href="#raisa-trusted" title="Ссылка на этот заголовок">¶</a></h2>
 <ul class="simple">
 <li>10 000 000 - страховка до 1 500 000 000 до ДТ</li>
 </ul>
@@ -203,7 +210,7 @@
 <div class="section" id="id2">
 <h2>Процедура возмещения<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
 <ol class="arabic simple">
-<li>Отправляете на почту <a class="reference internal" href="about/index.html"><em>администратору фонда страхования</em></a> данные слива (killmail) плюс краткое описание сложившейся ситуации (по возможности приложите скрин своих бродкастов к письму).</li>
+<li>Отправляете на почту <a class="reference internal" href="about/index.html"><span class="doc">администратору фонда страхования</span></a> данные слива (killmail) плюс краткое описание сложившейся ситуации (по возможности приложите скрин своих бродкастов к письму).</li>
 <li>Если соблюдены условия, то после обсуждения с ФК и слившимся выплачивается страховка.</li>
 <li>Срок выплаты - 48 часов. В праздничные и выходные дни срок выплаты может увеличиться.</li>
 </ol>
@@ -213,7 +220,7 @@
 <p>Фонд полностью прозрачен. Всю информацию о состоянии кошелька можно самостоятельно посмотреть через API:</p>
 <p><strong>ID:</strong> 2333664
 <strong>Pass:</strong> 9S994WtCxcRD7GsYsib9zSv1TENxbT7DJqagmr1G5hIgahF2cgXD0AWFpRLPwfAY</p>
-<p>Или на прямо у нас сайте - <a class="reference internal" href="srp_info.html"><em>тут</em></a>.</p>
+<p>Или на прямо у нас сайте - <a class="reference internal" href="srp_info.html"><span class="doc">тут</span></a>.</p>
 <p>При доступе через API смотрите главный корпоративный кошелёк (не работает в EVEMon)</p>
 </div>
 </div>
@@ -224,25 +231,59 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
-      <h3>Просмотр</h3>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Словарь-указатель"
-             >словарь</a></li>
+          <a href="genindex.html" title="Алфавитный указатель"
+             >указатель</a></li>
         <li class="right" >
           <a href="srp_info.html" title="Просмотр кошелька RAISA SRP"
-             >следующий</a> |</li>
+             >вперёд</a> |</li>
         <li class="right" >
           <a href="fit/shield/hq/vargur.html" title="Vargur - HQ"
-             >предыдущий</a> |</li>
-        <li><a href="tree.html">RAISA</a> &raquo;</li> 
+             >назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="tree.html">RAISA</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2013-2014, RAISA Incursions.
-      <!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=22462108&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/22462108/1_0_205386FF_003366FF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" onclick="try{Ya.Metrika.informer({i:this,id:22462108,lang:'ru'});return false}catch(e){}"/></a><!-- /Yandex.Metrika informer --><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22462108 = new Ya.Metrika({id:22462108, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22462108" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
-    </div>
+<div class="footer">
+    &copy; Copyright 2013-2014, RAISA Incursions.
+    <!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=22462108&amp;from=informer"
+                                       target="_blank" rel="nofollow"><img
+        src="//bs.yandex.ru/informer/22462108/1_0_205386FF_003366FF_1_pageviews"
+        style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика"
+        title="Яндекс.Метрика: данные за сегодня (просмотры)"
+        onclick="try{Ya.Metrika.informer({i:this,id:22462108,lang:'ru'});return false}catch(e){}"/></a>
+    <!-- /Yandex.Metrika informer --><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter22462108 = new Ya.Metrika({
+                    id: 22462108,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    trackHash: true
+                });
+            } catch (e) {
+            }
+        });
+        var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");</script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/22462108" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript><!-- /Yandex.Metrika counter -->
+</div>
 
 
   </body>

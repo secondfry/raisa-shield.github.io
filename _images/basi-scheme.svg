@@ -1,34 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="760" viewBox="0 0 100 126.66666" id="svg2">
- <defs>
-  <marker refX="0" refY="0" orient="auto" id="Arrow2Mend" overflow="visible">
-   <path d="M 8.72,4 -2.2,0 8.72,-4 c -1.75,2.37 -1.74,5.62 0,8 z" transform="scale(-0.6,-0.6)" style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
-  </marker>
- </defs>
- <rect width="60" height="20" x="20" y="8" fill="#ff0" />
- <rect width="60" height="20" x="20" y="38" fill="#ff0" />
- <rect width="60" height="20" x="20" y="68" fill="#0f0" />
- <rect width="60" height="20" x="20" y="98" fill="#ff0" />
- <text x="50" y="20" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">Cool_Guy_On_a_Logi</text>
- <text x="50" y="50" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">N</text>
- <text x="50" y="80" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">Opytny Logist</text>
- <text x="50" y="110" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">Pan Kinder Surprise</text>
- <path d="m 40,28 0,10" style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <path d="m 60,38 0,-10" style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <path d="m 40,58 0,10" style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <path d="m 60,68 0,-10" style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <path d="m 40,88 0,10" style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <path d="m 60,98 0,-10" style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <text x="33" y="34" font-size="4px" font-family="Droid Sans">1</text>
- <text x="65" y="34" font-size="4px" font-family="Droid Sans">1</text>
- <text x="33" y="64" font-size="4px" font-family="Droid Sans">0</text>
- <text x="65" y="64" font-size="4px" font-family="Droid Sans">1</text>
- <text x="33" y="94" font-size="4px" font-family="Droid Sans">1</text>
- <text x="65" y="94" font-size="4px" font-family="Droid Sans">1</text>
- <path d="m 40,118.4 0,8 -28,0 0,-126 28,0 0,8" style="fill:none;stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <path d="m 60,8 0,-8 28,0 L 88,126.4 l -28,0 0,-8" style="fill:none;stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
- <text x="92" y="64" font-size="4px" font-family="Droid Sans">1</text>
- <text x="6" y="64" font-size="4px" font-family="Droid Sans">1</text>
+        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+        xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="760" viewBox="0 0 100 126.66666" id="svg2">
+    <defs>
+        <marker refX="0" refY="0" orient="auto" id="Arrow2Mend" overflow="visible">
+            <path d="M 8.72,4 -2.2,0 8.72,-4 c -1.75,2.37 -1.74,5.62 0,8 z" transform="scale(-0.6,-0.6)"
+                  style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+        </marker>
+    </defs>
+    <rect width="60" height="20" x="20" y="8" fill="#ff0"/>
+    <rect width="60" height="20" x="20" y="38" fill="#ff0"/>
+    <rect width="60" height="20" x="20" y="68" fill="#0f0"/>
+    <rect width="60" height="20" x="20" y="98" fill="#ff0"/>
+    <text x="50" y="20" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">
+        Cool_Guy_On_a_Logi
+    </text>
+    <text x="50" y="50" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">N</text>
+    <text x="50" y="80" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">Opytny
+        Logist
+    </text>
+    <text x="50" y="110" style="font-size:4px;text-align:center;text-anchor:middle;font-family:Droid Sans">Pan Kinder
+        Surprise
+    </text>
+    <path d="m 40,28 0,10"
+          style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <path d="m 60,38 0,-10"
+          style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <path d="m 40,58 0,10"
+          style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <path d="m 60,68 0,-10"
+          style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <path d="m 40,88 0,10"
+          style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <path d="m 60,98 0,-10"
+          style="stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <text x="33" y="34" font-size="4px" font-family="Droid Sans">1</text>
+    <text x="65" y="34" font-size="4px" font-family="Droid Sans">1</text>
+    <text x="33" y="64" font-size="4px" font-family="Droid Sans">0</text>
+    <text x="65" y="64" font-size="4px" font-family="Droid Sans">1</text>
+    <text x="33" y="94" font-size="4px" font-family="Droid Sans">1</text>
+    <text x="65" y="94" font-size="4px" font-family="Droid Sans">1</text>
+    <path d="m 40,118.4 0,8 -28,0 0,-126 28,0 0,8"
+          style="fill:none;stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <path d="m 60,8 0,-8 28,0 L 88,126.4 l -28,0 0,-8"
+          style="fill:none;stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"/>
+    <text x="92" y="64" font-size="4px" font-family="Droid Sans">1</text>
+    <text x="6" y="64" font-size="4px" font-family="Droid Sans">1</text>
 </svg>

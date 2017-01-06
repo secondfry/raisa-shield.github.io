@@ -8,14 +8,13 @@
  * :license: BSD, see LICENSE for details.
  *
  */
-
 @import url("basic.css");
 
 /* -- page layout ----------------------------------------------------------- */
 
 body {
     font-family: 'Ubuntu', 'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',
-                 'Verdana', sans-serif;
+    'Verdana', sans-serif;
     font-size: 15px;
     text-align: center;
     background-image: url(bodybg.png);
@@ -51,18 +50,21 @@ table caption {
     text-align: left;
     padding: 10px 15px;
 }
+
 .pageheader h1 {
     font-weight: bold;
     padding: 0;
     margin: 0;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
 }
+
 .pageheader h2 {
     color: white;
     padding: 0;
     margin: 0;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
 }
+
 .pageheader ul {
     float: right;
     color: white;
@@ -171,7 +173,7 @@ div.sphinxsidebar .logo img {
 div.sphinxsidebar input {
     border: 1px solid #aaa;
     font-family: 'Ubuntu', 'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',
-                 'Verdana', sans-serif;
+    'Verdana', sans-serif;
     font-size: 1em;
 }
 
@@ -236,7 +238,7 @@ div.footer a {
 
 /* -- body styles ----------------------------------------------------------- */
 
-p {    
+p {
     margin: 0.8em 0 0.5em 0;
 }
 
@@ -294,12 +296,12 @@ a.headerlink {
 
 a.headerlink:hover {
     background-color: #ccc;
-    color: white!important;
+    color: white !important;
 }
 
 cite, code, tt {
     font-family: 'Ubuntu Mono', 'Consolas', 'DejaVu Sans Mono',
-                 'Bitstream Vera Sans Mono', monospace;
+    'Bitstream Vera Sans Mono', monospace;
     font-size: 14px;
     letter-spacing: -0.02em;
 }
@@ -332,7 +334,7 @@ a tt:hover {
 
 pre {
     font-family: 'Ubuntu Mono', 'Consolas', 'DejaVu Sans Mono',
-                 'Bitstream Vera Sans Mono', monospace;
+    'Bitstream Vera Sans Mono', monospace;
     font-size: 13px;
     letter-spacing: 0.015em;
     line-height: 120%;
@@ -400,7 +402,7 @@ div.warning p.admonition-title {
 
 div.warning {
     border: 1px solid #940000;
-/*    background-color: #FFCCCF;*/
+    /*    background-color: #FFCCCF;*/
 }
 
 div.warning p.admonition-title {
@@ -414,7 +416,7 @@ div.warning ul, div.warning ol {
 
 .viewcode-back {
     font-family: 'Ubuntu', 'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',
-                 'Verdana', sans-serif;
+    'Verdana', sans-serif;
 }
 
 div.viewcode-block:target {
