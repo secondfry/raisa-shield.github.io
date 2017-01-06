@@ -141,6 +141,11 @@ def update_fit(eft_filename, rst_filename):
                 f.write('- %s\n' % get_type_link(line.strip()))
             f.write('\n')
 
+        f.write('EFT\n---\n\n.. code-block:: none\n\n')
+        for line in eft.splitlines():
+            f.write('\t' + line + '\n')
+        f.write('\n')
+
 
 def get_type_link(t):
     if t.lower() in ['[empty high slot]',
