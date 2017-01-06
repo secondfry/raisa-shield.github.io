@@ -4,31 +4,24 @@
 # Скрипт генерит EFT из DNA с указанного .rst-файла.
 #
 
-import sys
+import logging
 import os
 import re
-
-import logging
+import sys
 
 from eve_sphinx.utils import dna2eft, TYPES_BY_ID
 
-
 FIT_LINK_RE = re.compile(r"`(?P<name>[^<`]+) <javascript:CCPEVE.showFitting\('(?P<dna>\d+:(\d+;\d+:)+:)'\);>`_")
 
-
 if __name__ == "__main__":
-
     logging.basicConfig(format="%(message)s", level=logging.DEBUG)
-
     text = open(sys.argv[1]).read().decode('utf-8')
-
     fits = list(
         (i.group('name'), i.group('dna'))
         for i in FIT_LINK_RE.finditer(text)
     )
 
     for name, dna in fits:
-
         names = {
             u'бюджет': 'basic',
             u'средний': 'standard',
@@ -55,7 +48,6 @@ if __name__ == "__main__":
             fname = u'%s.eft' % ship.lower()
 
         fname = '-'.join(fname.split())
-
         eft = dna2eft(name, dna)
 
         with open(os.path.join(sys.argv[2], fname), 'w') as f:

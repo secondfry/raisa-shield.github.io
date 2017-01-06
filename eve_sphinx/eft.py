@@ -9,7 +9,6 @@ class eft(nodes.General, nodes.Element):
 
 
 class EFT(Directive):
-
     has_content = True
     required_arguments = 0
     optional_arguments = 0

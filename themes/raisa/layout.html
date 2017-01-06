@@ -1,11 +1,11 @@
 ﻿{#
-    sphinxdoc/layout.html
-    ~~~~~~~~~~~~~~~~~~~~~
+sphinxdoc/layout.html
+~~~~~~~~~~~~~~~~~~~~~
 
-    Sphinx layout template for the sphinxdoc theme.
+Sphinx layout template for the sphinxdoc theme.
 
-    :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
+:copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
+:license: BSD, see LICENSE for details.
 #}
 {%- extends "basic/layout.html" %}
 
@@ -14,17 +14,23 @@
 {% block sidebar2 %}{% endblock %}
 
 {% block extrahead %}
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700'
-          rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700'
+      rel='stylesheet' type='text/css'>
 {{ super() }}
 {%- if not embedded %}
-    <style type="text/css">
-      table.right { float: right; margin-left: 20px; }
-      table.right td { border: 1px solid #ccc; }
-    </style>
-    <script type="text/javascript">
-      // intelligent scrolling of the sidebar content
-      $(window).scroll(function() {
+<style type="text/css">
+    table.right {
+        float: right;
+        margin-left: 20px;
+    }
+
+    table.right td {
+        border: 1px solid #ccc;
+    }
+</style>
+<script type="text/javascript">
+    // intelligent scrolling of the sidebar content
+    $(window).scroll(function () {
         var sb = $('.sphinxsidebarwrapper');
         var win = $(window);
         var sbh = sb.height();
@@ -35,58 +41,94 @@
         var curbot = curtop + sbh;
         // does sidebar fit in window?
         if (sbh < win.innerHeight()) {
-          // yes: easy case -- always keep at the top
-          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
-                                $(document).height() - sbh - 200]));
+            // yes: easy case -- always keep at the top
+            sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                $(document).height() - sbh - 200]));
         } else {
-          // no: only scroll if top/bottom edge of sidebar is at
-          // top/bottom edge of window
-          if (curtop > wintop && curbot > winbot) {
-            sb.css('top', $u.max([wintop - offset - 10, 0]));
-          } else if (curtop < wintop && curbot < winbot) {
-            sb.css('top', $u.min([winbot - sbh - offset - 20,
-                                  $(document).height() - sbh - 200]));
-          }
+            // no: only scroll if top/bottom edge of sidebar is at
+            // top/bottom edge of window
+            if (curtop > wintop && curbot > winbot) {
+                sb.css('top', $u.max([wintop - offset - 10, 0]));
+            } else if (curtop < wintop && curbot < winbot) {
+                sb.css('top', $u.min([winbot - sbh - offset - 20,
+                    $(document).height() - sbh - 200]));
+            }
         }
-      });
-    </script>
+    });
+</script>
 {%- endif %}
 {% endblock %}
 
 {% block header %}
 <div class="pageheader">
-  <ul>
-    <li><a href="{{ pathto('quickstart') }}">Быстрый старт</a></li>
-    <li><a href="{{ pathto('rules') }}">Правила</a></li>
-    <li><a href="{{ pathto('fits/index') }}">Фиты</a></li>
-    <li><a href="{{ pathto('srp') }}">Страхование</a></li>
-    <li><a href="{{ pathto('about/index') }}">Наша команда</a></li>
-  </ul>
-  <div>
-    <a href="/">
-      <h1>RAISA</h1>
-      <h2>Вторжения Sansha для чайников и не только!</h2>
-    </a>
-  </div>
+    <ul>
+        <li><a href="{{ pathto('quickstart') }}">Быстрый старт</a></li>
+        <li><a href="{{ pathto('rules') }}">Правила</a></li>
+        <li><a href="{{ pathto('fits/index') }}">Фиты</a></li>
+        <li><a href="{{ pathto('srp') }}">Страхование</a></li>
+        <li><a href="{{ pathto('about/index') }}">Наша команда</a></li>
+    </ul>
+    <div>
+        <a href="/">
+            <h1>RAISA</h1>
+            <h2>Вторжения Sansha для чайников и не только!</h2>
+        </a>
+    </div>
 </div>
 {% endblock %}
 
 {% block footer %}
-    <div class="footer">
+<div class="footer">
     {%- if show_copyright %}
-      {%- if hasdoc('copyright') %}
-        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-      {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
-      {%- endif %}
+    {%- if hasdoc('copyright') %}
+    {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright
+    }}.{% endtrans %}
+    {%- else %}
+    {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+    {%- endif %}
     {%- endif %}
     {%- if last_updated %}
-      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+    {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
     {%- endif %}
     {%- if show_sphinx %}
-      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+    {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{
+    sphinx_version }}.{% endtrans %}
     {%- endif %}
-      <!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=22462108&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/22462108/1_0_205386FF_003366FF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" onclick="try{Ya.Metrika.informer({i:this,id:22462108,lang:'ru'});return false}catch(e){}"/></a><!-- /Yandex.Metrika informer --><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22462108 = new Ya.Metrika({id:22462108, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22462108" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
-    </div>
+    <!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=22462108&amp;from=informer"
+                                       target="_blank" rel="nofollow"><img
+        src="//bs.yandex.ru/informer/22462108/1_0_205386FF_003366FF_1_pageviews"
+        style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика"
+        title="Яндекс.Метрика: данные за сегодня (просмотры)"
+        onclick="try{Ya.Metrika.informer({i:this,id:22462108,lang:'ru'});return false}catch(e){}"/></a>
+    <!-- /Yandex.Metrika informer --><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter22462108 = new Ya.Metrika({
+                    id: 22462108,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    trackHash: true
+                });
+            } catch (e) {
+            }
+        });
+        var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");</script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/22462108" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript><!-- /Yandex.Metrika counter -->
+</div>
 
 {% endblock %}

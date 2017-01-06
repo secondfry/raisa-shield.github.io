@@ -1,23 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import re
-
 import json
-
 import os
-
+import re
 from pprint import pprint
 
 pprint(os.environ)
-
 
 TYPES_BY_ID = json.load(open('types_by_id.json'))
 TYPES_BY_NAME = json.load(open('types_by_name.json'))
 
 
 def dna2eft(name, dna):
-
     ship = TYPES_BY_ID[dna.split(':')[0]]['name']
 
     modules = [i.split(';') for i in dna.split(':')[1:] if i]
@@ -39,8 +34,8 @@ def dna2eft(name, dna):
 
     return u'[%s, %s]\n\n%s\n' % (
         ship, name, '\n\n'.join([
-            '\n'.join(modules_by_slot.get(group, [])) for group in groups
-        ]),
+                                    '\n'.join(modules_by_slot.get(group, [])) for group in groups
+                                    ]),
     )
 
 
@@ -54,7 +49,6 @@ MODULE_RE = re.compile('((?P<q>[0-9 ]+)x )?(?P<name>.*)')
 
 
 def text2dna(ship, lines):
-
     assert TYPES_BY_NAME[ship]['slot'] == 'ship'
 
     modules = {}

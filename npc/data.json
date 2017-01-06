@@ -1,45 +1,45 @@
 [
-    {
-        "type": "frigate",
-        "name": "Niarja Myelen",
-        "properties": [
-            "jam",
-            "neut"
-        ]
-    },
-    {
-        "type": "frigate",
-        "name": "Schmaeel Medulla",
-        "properties": [
-            "point",
-            "web"
-        ]
-    },
-    {
-        "type": "frigate",
-        "name": "Renyn Meten",
-        "properties": [
-            "web"
-        ]
-    },
-    {
-        "type": "frigate",
-        "name": "Tama Cerebellum",
-        "properties": [
-            "point"
-        ]
-    },
-    {
-        "type": "frigate",
-        "name": "Eystur Rhomben",
-        "properties": []
-    },
-    {
-        "type": "frigate",
-        "name": "Sansha's Nation Commander",
-        "properties": [
-            "point",
-            "dps"
-        ]
-    }
+  {
+    "type": "frigate",
+    "name": "Niarja Myelen",
+    "properties": [
+      "jam",
+      "neut"
+    ]
+  },
+  {
+    "type": "frigate",
+    "name": "Schmaeel Medulla",
+    "properties": [
+      "point",
+      "web"
+    ]
+  },
+  {
+    "type": "frigate",
+    "name": "Renyn Meten",
+    "properties": [
+      "web"
+    ]
+  },
+  {
+    "type": "frigate",
+    "name": "Tama Cerebellum",
+    "properties": [
+      "point"
+    ]
+  },
+  {
+    "type": "frigate",
+    "name": "Eystur Rhomben",
+    "properties": []
+  },
+  {
+    "type": "frigate",
+    "name": "Sansha's Nation Commander",
+    "properties": [
+      "point",
+      "dps"
+    ]
+  }
 ]

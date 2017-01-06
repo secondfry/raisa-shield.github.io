@@ -4,42 +4,45 @@
 ## Импорты
 import json
 
+
 ## Хелперы
 def writeln(file, string):
     file.write(string)
     file.write('\n')
+
 
 def writelntab(file, string, tabcount):
     file.write(tabcount * '\t')
     file.write(string)
     file.write('\n')
 
+
 ## Инициализация
 propertiesList = {
     "point": {
-        "weight":   "0b10000",
-        "icon":     "http://image.eveonline.com/Type/3242_64.png",
-        "text":     "Поинт"
+        "weight": "0b10000",
+        "icon": "http://image.eveonline.com/Type/3242_64.png",
+        "text": "Поинт"
     },
     "neut": {
-        "weight":   "0b01000",
-        "icon":     "http://image.eveonline.com/Type/533_64.png",
-        "text":     "Нейтрят"
+        "weight": "0b01000",
+        "icon": "http://image.eveonline.com/Type/533_64.png",
+        "text": "Нейтрят"
     },
     "jam": {
-        "weight":   "0b00100",
-        "icon":     "http://image.eveonline.com/Type/1957_64.png",
-        "text":     "Джам"
+        "weight": "0b00100",
+        "icon": "http://image.eveonline.com/Type/1957_64.png",
+        "text": "Джам"
     },
     "dps": {
-        "weight":   "0b00010",
-        "icon":     "http://image.eveonline.com/Type/267_64.png",
-        "text":     "ДПС"
+        "weight": "0b00010",
+        "icon": "http://image.eveonline.com/Type/267_64.png",
+        "text": "ДПС"
     },
     "web": {
-        "weight":   "0b00001",
-        "icon":     "http://image.eveonline.com/Type/526_64.png",
-        "text":     "Сетка"
+        "weight": "0b00001",
+        "icon": "http://image.eveonline.com/Type/526_64.png",
+        "text": "Сетка"
     }
 }
 
@@ -49,14 +52,17 @@ typeList = {
 
 lasttype = ''
 
+
 class Ship:
     def __init__(self, shipname, shiptype, shipweight, properties):
         self.name = shipname
         self.type = shiptype
         self.weight = shipweight
         self.properties = properties
+
     def __repr__(self):
         return repr((self.name, self.type, self.weight, self.properties))
+
 
 ships = []
 
@@ -79,7 +85,7 @@ ships.sort(key=lambda ship: ship.weight, reverse=True)
 
 with open(filepath_destination, 'w') as f:
     writeln(f, header)
-    writeln(f, len(header.decode('utf-8')) * '=') # FIXME magic number
+    writeln(f, len(header.decode('utf-8')) * '=')  # FIXME magic number
 
 for val in ships:
     with open(filepath_destination, 'a') as f:

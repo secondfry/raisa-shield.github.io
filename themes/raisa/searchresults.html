@@ -1,33 +1,33 @@
 {#
-    basic/searchresults.html
-    ~~~~~~~~~~~~~~~~~~~~~~~~
+basic/searchresults.html
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Template for the body of the search results page.
+Template for the body of the search results page.
 
-    :copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
+:copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.
+:license: BSD, see LICENSE for details.
 #}
 <h1 id="search-documentation">Поиск по сайту</h1>
 <form action="" method="get">
-  <input type="text" name="q" value="" />
-  <input type="submit" value="search" />
-  <span id="search-progress" style="padding-left: 10px"></span>
+    <input type="text" name="q" value=""/>
+    <input type="submit" value="search"/>
+    <span id="search-progress" style="padding-left: 10px"></span>
 </form>
 {%- if search_performed %}
-  <h2>Результаты поиска</h2>
-  {%- if not search_results %}
-  <p>Ничего найти не удалось.</p>
-  {%- endif %}
+<h2>Результаты поиска</h2>
+{%- if not search_results %}
+<p>Ничего найти не удалось.</p>
+{%- endif %}
 {%- endif %}
 <div id="search-results">
-  {%- if search_results %}
-  <ul class="search">
-    {% for href, caption, context in search_results %}
-    <li><a href="{{ docroot }}{{ href }}/?highlight={{ q }}">{{ caption }}</a>
-      <div class="context">{{ context|e }}</div>
-    </li>
-    {% endfor %}
-  </ul>
-  {%- endif %}
+    {%- if search_results %}
+    <ul class="search">
+        {% for href, caption, context in search_results %}
+        <li><a href="{{ docroot }}{{ href }}/?highlight={{ q }}">{{ caption }}</a>
+            <div class="context">{{ context|e }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+    {%- endif %}
 </div>
 

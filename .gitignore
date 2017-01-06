@@ -2,7 +2,8 @@
 *.swp
 .doctrees
 *.pyc
-srp_info.rst
+.idea
+
 srp.json
 deploy.lock
 build

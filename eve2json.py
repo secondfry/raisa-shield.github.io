@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 
-import os
 import json
+import os
 from collections import OrderedDict
 
 from reverence import blue
@@ -37,12 +37,12 @@ def get_json(*args, **kwargs):
         'id': t.typeID,
         'slot': slot,
     }) for t, slot in sorted(with_slots, key=lambda x: x[0].name)
-    ), *args, **kwargs)
+                                           ), *args, **kwargs)
     types_by_id = json.dumps(OrderedDict((t.typeID, {
         'name': t.name,
         'slot': slot,
     }) for t, slot in sorted(with_slots, key=lambda x: x[0].typeID)
-    ), *args, **kwargs)
+                                         ), *args, **kwargs)
     return types_by_name, types_by_id
 
 

@@ -2,10 +2,10 @@
 # coding: utf-8
 
 ## Импорты
+import json
 import logging
 import os
 import re
-import json
 
 ## Инициализация
 starList = {
@@ -72,7 +72,8 @@ def update_fit(eft_filename, rst_filename):
         elif item in TYPES:
             modules[TYPES[item]] = modules.get(TYPES[item], 0) + 1
         elif re.match('x\d+', item.split()[-1]) is not None and item.rsplit(' ', 1)[0] in TYPES:
-            modules[TYPES[item.rsplit(' ', 1)[0]]] = modules.get(TYPES[item.rsplit(' ', 1)[0]], 0) + int(item.split()[-1][1:])
+            modules[TYPES[item.rsplit(' ', 1)[0]]] = modules.get(TYPES[item.rsplit(' ', 1)[0]], 0) + int(
+                item.split()[-1][1:])
 
     dna = '%d:%s::' % (
         TYPES[ship_name],
@@ -151,6 +152,7 @@ def get_type_link(t):
     elif t in TYPES:
         return '`%s <javascript:CCPEVE.showInfo(%d)>`_' % (t, TYPES[t])
     return t
+
 
 ## Поехали!
 if __name__ == "__main__":
