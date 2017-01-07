@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-## Импорты
 import json
+import os
 
 
-## Хелперы
 def writeln(file, string):
     file.write(string)
     file.write('\n')
@@ -17,7 +15,6 @@ def writelntab(file, string, tabcount):
     file.write('\n')
 
 
-## Инициализация
 propertiesList = {
     "point": {
         "weight": "0b10000",
@@ -66,13 +63,12 @@ class Ship:
 
 ships = []
 
-dirpath = 'npc/'
-filepath_source = dirpath + 'data.json'
-filepath_destination = dirpath + 'index.rst'
+dirpath = 'npc'
+filepath_source = os.path.join(dirpath, 'data.json')
+filepath_destination = os.path.join(dirpath, 'index.rst')
 
 header = "Описание NPC"
 
-## Погнали!
 JSON = json.load(open(filepath_source))
 
 for i, val in enumerate(JSON):
@@ -84,8 +80,10 @@ for i, val in enumerate(JSON):
 ships.sort(key=lambda ship: ship.weight, reverse=True)
 
 with open(filepath_destination, 'w') as f:
+    writeln(f, '.. index:: ' + header)
+    writeln(f, '')
     writeln(f, header)
-    writeln(f, len(header.decode('utf-8')) * '=')  # FIXME magic number
+    writeln(f, len(header.decode('utf-8')) * '=')
 
 for val in ships:
     with open(filepath_destination, 'a') as f:

@@ -1,13 +1,11 @@
 #!/usr/bin/env python2
 # coding: utf-8
-
-## Импорты
 import json
 import logging
 import os
 import re
 
-## Инициализация
+
 starList = {
     "Basilisk": 5,
     "Scimitar": 5,
@@ -49,7 +47,6 @@ _types_by_name = json.load(open('types_by_name.json')).items()
 TYPES = dict((k, v['id']) for k, v in _types_by_name)
 
 
-## Функции
 def update_fit(eft_filename, rst_filename):
     logging.info('Updating file %s -> %s', eft_filename, rst_filename)
 
@@ -159,7 +156,6 @@ def get_type_link(t):
     return t
 
 
-## Поехали!
 if __name__ == "__main__":
     logging.basicConfig(format="%(message)s", level=logging.DEBUG)
     for root, subdirs, files in list(os.walk('fit'))[::-1]:
@@ -192,7 +188,7 @@ if __name__ == "__main__":
         fits[complexType].sort(key=lambda single_ship: single_ship[0], reverse=True)
 
         for ship in fits[complexType]:
-            fits_data[complexType] += '%s :doc:`%s <%s>`\n\n' % (ship[0] * '\*', ship[1], ship[2])
+            fits_data[complexType] += '\t%s %s <%s>\n\n' % (ship[0] * '*', ship[1], ship[2])
 
         template = open(fits_file[complexType] + '.tpl').read().decode('utf-8')
         data = template.format(**{"data": fits_data[complexType]}).encode('utf-8')

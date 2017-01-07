@@ -1,24 +1,7 @@
 .. index:: Быстрый старт
 
-.. toctree::
-    :hidden:
-
-    guides/faq
-    guides/ammo
-
-    Виндикаторам: руководство дроновода <guides/ddd>
-    Василискам: построение капцепи <guides/basi-chat>
-
-    sites/index
-    npc/index
-
-    Глоссарий <guides/glossary>
-
-    Настройка Teamspeak <guides/teamspeak>
-
 Быстрый старт
 =============
-
 Привет, пилот!
 
 Спасибо за проявленный интерес ко вторжениям!
@@ -42,16 +25,13 @@
 
 Фиты
 ----
-
 - Пират БШ: :doc:`Machariel <fits/machariel>` - :doc:`Nightmare <fits/nightmare>` - :doc:`Vindicator <fits/vindicator>`
 - Логисты: :doc:`Basilisk <fits/basilisk>` - :doc:`Scimitar <fits/scimitar>`
 - Прочие корабли: :doc:`Фиты для VG <fits/shield-vg>` - :doc:`Фиты для HQ <fits/shield-hq>`
 
-:doc:`ЧаВо по патронам и дронам <guides/ammo>`
-
 Кладезь
 -------
-
+- :doc:`ЧаВо по патронам и дронам <guides/ammo>`
 - :doc:`Глоссарий <guides/glossary>`
 - :doc:`Описание комплексов <sites/index>`
 - `Таблица NPC <https://docs.google.com/spreadsheet/ccc?key=0AjLGXOYricladExvNm82TkRhWllLdU5OVVI3UGl2WGc>`_

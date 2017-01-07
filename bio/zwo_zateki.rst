@@ -1,3 +1,5 @@
+.. index:: Zwo Zateki
+
 Zwo Zateki
 ==========
 .. image:: http://image.eveonline.com/Character/90775154_256.jpg

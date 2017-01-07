@@ -5,14 +5,14 @@ Shield-формат
 -------------
 
 .. toctree::
-  :maxdepth: 1
+    :maxdepth: 1
 
-  nightmare
-  machariel
-  vindicator
-  
-  basilisk
-  scimitar
+    nightmare
+    machariel
+    vindicator
 
-  shield-vg
-  shield-hq
+    basilisk
+    scimitar
+
+    shield-vg
+    shield-hq

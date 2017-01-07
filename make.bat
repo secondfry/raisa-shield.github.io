@@ -12,9 +12,9 @@ if "%1" == "" goto html
 
 if "%1" == "html" (
 	:html
-	python npc/update-npc.py
-	python update-fits.py
-	python wallet.py && cp srp.json %BUILDDIR%/
+	python scripts/update-npc.py
+	python scripts/update-fits.py
+	python scripts/wallet.py # && cp srp.json $(BUILDDIR)/
 	%SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/
 	echo ''>>%BUILDDIR%/.nojekyll
 	if errorlevel 1 exit /b 1

@@ -18,15 +18,21 @@ Vindicator
 
 VG
 --
-* :doc:`Бюджетный </fit/shield/vindicator/vindicator-vg-1>`
-* :doc:`Средний </fit/shield/vindicator/vindicator-vg-2>`
-* :doc:`Ветеран </fit/shield/vindicator/vindicator-vg-3>`
+.. toctree::
+    :maxdepth: 1
+
+    Бюджетный </fit/shield/vindicator/vindicator-vg-1>
+    Средний </fit/shield/vindicator/vindicator-vg-2>
+    Ветеран </fit/shield/vindicator/vindicator-vg-3>
 
 HQ
 --
-* :doc:`Бюджетный </fit/shield/vindicator/vindicator-hq-1>`
-* :doc:`Средний </fit/shield/vindicator/vindicator-hq-2>`
-* :doc:`Ветеран </fit/shield/vindicator/vindicator-hq-3>`
+.. toctree::
+    :maxdepth: 1
+
+    Бюджетный </fit/shield/vindicator/vindicator-hq-1>
+    Средний </fit/shield/vindicator/vindicator-hq-2>
+    Ветеран </fit/shield/vindicator/vindicator-hq-3>
 
 Рекомендуемые импланты
 ----------------------

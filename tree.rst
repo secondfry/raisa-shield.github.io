@@ -1,11 +1,15 @@
+.. index:: Дерево сайта
+
 Дерево сайта
 ============
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 5
 
     index
     quickstart
-    rules
     fits/index
+    guides/index
+    sites/index
+    rules
     srp
     about/index

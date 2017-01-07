@@ -1,9 +1,4 @@
 .. index:: Machariel
-.. toctree::
-    :hidden:
-    :glob:
-
-    /fit/shield/machariel/*
 
 Machariel
 =========
@@ -18,15 +13,21 @@ Machariel
 
 VG
 --
-* :doc:`Бюджетный </fit/shield/machariel/machariel-vg-1>`
-* :doc:`Средний </fit/shield/machariel/machariel-vg-2>`
-* :doc:`Ветеран </fit/shield/machariel/machariel-vg-3>`
+.. toctree::
+    :maxdepth: 1
+
+    Бюджетный </fit/shield/machariel/machariel-vg-1>
+    Средний </fit/shield/machariel/machariel-vg-2>
+    Ветеран </fit/shield/machariel/machariel-vg-3>
 
 HQ
 --
-* :doc:`Бюджетный </fit/shield/machariel/machariel-hq-1>`
-* :doc:`Средний </fit/shield/machariel/machariel-hq-2>`
-* :doc:`Ветеран </fit/shield/machariel/machariel-hq-3>`
+.. toctree::
+    :maxdepth: 1
+
+    Бюджетный </fit/shield/machariel/machariel-hq-1>
+    Средний </fit/shield/machariel/machariel-hq-2>
+    Ветеран </fit/shield/machariel/machariel-hq-3>
 
 Рекомендуемые импланты
 ----------------------
