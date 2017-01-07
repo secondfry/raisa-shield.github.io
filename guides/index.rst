@@ -9,5 +9,6 @@
     ddd
     faq
     ammo
+    /npc/index
     teamspeak
     glossary
